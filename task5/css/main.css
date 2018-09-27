@@ -1,0 +1,67 @@
+/* Задание 1 */
+p.first
+{
+	color: #999999;
+}
+h1
+{
+	font-family: Tahoma;
+}
+h2
+{
+	color: #0088cc;
+}
+
+/* Задание 2 */
+.error
+{
+	color: red;
+}
+/* Задание 3 */
+table
+{
+	width: 100%;
+	text-align: left;
+}
+table tr td
+{
+	padding-left: 10px;
+	height: 40px;
+}
+table tr td:first-child
+{
+	background-color: #eee;
+	width: 20%;
+}
+table tr td:last-child
+{
+	background-color: rgb(251, 255, 0);
+}
+
+/* My animation pulse button */
+.h1
+{
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding: 10px 20px;
+	border-radius: 4px;
+	display: inline-block;
+	background-color: red;
+	animation: pulse 4s infinite;
+	animation-duration: 1.5s; 
+	animation-timing-function: ease-out; 
+	animation-delay: 0s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-fill-mode: none;
+	animation-play-state: running; 
+}
+@keyframes pulse {
+	0% {
+		background-color: #0088cc;
+	}
+	100% {
+		background-color: #FF4136;
+	}
+}
