@@ -21,6 +21,7 @@
 html
 	background-color: transparent
 
+
 body
 	font-size: 14px
 	min-width: 320px
@@ -30,6 +31,7 @@ body
 	background-color: #fafafa
 	overflow-x: hidden
 	opacity: 1
+	height: calc(100% - 218px)
 	color: $text
 	input, textarea
 		border: #666 1px solid
@@ -493,6 +495,7 @@ section
 		margin-bottom: 20px
 		border-top: 1px solid #ddd
 		border-bottom: 1px solid #ddd
+		user-select: none
 		.h4
 			display: inline-block
 			margin: 0
@@ -553,6 +556,69 @@ section
 						opacity: 1
 				.container-checkbox + p
 					display: inline-block
-					user-select: none
+
+
+.product-main-img
+	border: 1px solid $text
+
+.product-thumb
+	margin: 0
+	padding: 0
+	list-style-type: none
+	text-align: center
+	li
+		display: inline-block
+		margin: 30px 10px
+		img
+			width: 100px
+			border: 1px solid $text
+
+.dark
+	border-color: #ddd
+	&:after,&:before
+		display: none
+	&:hover
+		background-color: $text
+		border-color: $text
+		span
+			color: #ffffff
+.ico
+	padding: 0
+	height: 44px
+	width: 44px
+	border-radius: 100%
+	line-height: 44px
+
+.advantages
+	list-style-type: none
+	li
+		&:before
+			content: ''
+			display: inline-block
+			width: 4px
+			height: 4px
+			vertical-align: middle
+			margin-right: 9px
+			background-color: $text
+
+.recommended-headline
+	margin: 25px 0
+
+.s-product
+	.price
+		font-weight: 500
+		font-size: 24px
+	
+	.product-size
+		margin: 15px 0
+		padding: 0
+		list-style-type: none
+		li
+			display: inline-block
+			font-size: 16px
+			margin-right: 10px
+
+	.btn-group
+		margin: 30px 0
 
 @import "media" // Always at the end
