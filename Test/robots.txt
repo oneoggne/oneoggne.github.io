@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin
+Disallow: /system
+Disallow: /robots.txt
+Allow: /
+
+Host: https://lascut.ru
+Sitemap: https://lascut.ru/sitemap.xml
